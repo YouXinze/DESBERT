@@ -1,0 +1,32 @@
+epochs: 500
+gpu: cuda:0
+lr_decay_patience: 10
+early_stop_patience: 30
+lr_decay_factor: 0.5
+split by: group
+seed: 3042
+
+k : 10
+
+
+batch_size: 32
+init_lr: 0.001
+min_lr :  0.0001
+weight_decay : 0
+
+DA : False
+Freeze : True
+Load pretrained model : True
+
+transformer:
+  ntoken: 1295
+  d_model: 256
+  nhead: 4
+  d_hid: 512
+  nlayers: 3
+  dropout: 0
+
+#0.3871224815429789 0.5489586412235667 0.9028316059923378
+#0.43217133417317183 0.6320973649414217 0.8711709711333162
+#0.36438647103768507 0.5033917711049006 0.9182932385375809
+#10m 0.3637365940273665 0.5248861048712824 0.9111666734908277
